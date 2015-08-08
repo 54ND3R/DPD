@@ -69,12 +69,20 @@ div#slide3_tracking{
 	background: url("../img/tracking/tracking_tracker.png") no-repeat;
 	background-position: 0 50px;
 }
-div#slide3 > input[type="button"]{
+div#slide3 > input[type="button"] {
 	background-color:#fff;
 	border:3px #000 solid;
 }
 div#slide4{
 	background-color:#4a5054;
+}
+div#slide4_delivery{
+	margin:auto auto;
+	background: url("../img/delivery/delivery_login.png") no-repeat;;
+}
+div#slide4 > input[type="button"] {
+	background-color:transparent;
+	border:3px #fff solid;
 }
 /*fonts*/
 
