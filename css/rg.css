@@ -30,13 +30,28 @@
 .rgh12{
 	height:915px; 
 }
+.rgh6{
+	height:457.5px;
+}
 .rgh4{
 	height:305px; 
 }
-/*marges*/
+.rgh1{
+	height:76.5px;
+}
+/*x margin*/
+.rg8_left_margin{
+	margin-left:1280px;
+}
 /*padding*/
+.rg0_5_top_padding{
+	padding-top:80px;
+}
 .rg1_top_padding{
 	padding-top:160px;
+}
+.rg1_25_top_padding{
+	padding-top:200px;
 }
 .rg2_top_padding{
 	padding-top:320px;

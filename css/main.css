@@ -35,15 +35,13 @@ div.slide{
 }
 /*slide1*/
 div#slide1{
-	background-image:url("../img/home/slide1_globe.png");
+	background:url("../img/home/slide1_globe.png") no-repeat;
 	background-color:#ed1c24;
-	height: 915px;
 }
 
 /*slide2*/
 div#slide2{
 	background-color:#4a5054;
-	height: 915px;
 }
 div#slide2_wrap{
 	margin:auto auto;
@@ -54,16 +52,32 @@ div#slide2_weight,div#slide2_size,div#slide2_fragility{
 	float:left;
 }
 div#slide2_weight{
-	background: url("../img/service/service_weight.png")
+	background: url("../img/service/service_weight.png") no-repeat;
 }
 div#slide2_size{
-	background: url("../img/service/service_size.png")
+	background: url("../img/service/service_size.png") no-repeat;
 }
 div#slide2_fragility{
-	background: url("../img/service/service_fragility.png")
+	background: url("../img/service/service_fragility.png") no-repeat;
 }
+/*slide3*/
+div#slide3{
 
+}
+div#slide3_tracking{
+	margin:auto auto;
+	background: url("../img/tracking/tracking_tracker.png") no-repeat;
+	background-position: 0 50px;
+}
+div#slide3 > input[type="button"]{
+	background-color:#fff;
+	border:3px #000 solid;
+}
+div#slide4{
+	background-color:#4a5054;
+}
 /*fonts*/
+
 .title{
 	margin:auto auto;
 	text-align:center;
@@ -79,5 +93,16 @@ div#slide2_fragility{
 	font-family: "Ebrima",serif;
 	font-weight: 700;
 	font-size: 48pt;
+}
+.smalltitle{
+	margin:auto auto;
+	text-align:center;
+	color:#fff;
+	font-family: "Ebrima",serif;
+	font-weight: 400;
+	font-size: 24pt;
+}
+.black{
+	color:#000;
 }
 /*misc*/
