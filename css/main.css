@@ -1,0 +1,83 @@
+/*
+* Sander De Bleecker - 2 NMCT1
+* 08/08/2015
+* Web advanced : DPD - Parcel Delivery
+*/
+
+body{
+	margin:0px;
+}
+body div{
+
+}
+header{
+	height: 60px;
+}
+	header > img{
+		float:right;
+	}
+	header > nav{
+		float:left;
+	}
+	header > nav > ul > li{
+		list-style: none;
+		display: block;
+		padding:0 50px;
+		float:left;
+	}
+
+/*frequent classes*/
+div#slide_wrapper{
+	width:10000px;
+}
+div.slide{
+	float:left;
+}
+/*slide1*/
+div#slide1{
+	background-image:url("../img/home/slide1_globe.png");
+	background-color:#ed1c24;
+	height: 915px;
+}
+
+/*slide2*/
+div#slide2{
+	background-color:#4a5054;
+	height: 915px;
+}
+div#slide2_wrap{
+	margin:auto auto;
+}
+div#slide2_weight,div#slide2_size,div#slide2_fragility{
+	text-align:center;
+	line-height:100px;
+	float:left;
+}
+div#slide2_weight{
+	background: url("../img/service/service_weight.png")
+}
+div#slide2_size{
+	background: url("../img/service/service_size.png")
+}
+div#slide2_fragility{
+	background: url("../img/service/service_fragility.png")
+}
+
+/*fonts*/
+.title{
+	margin:auto auto;
+	text-align:center;
+	color:#fff;
+	font-family: "Ebrima",serif;
+	font-weight: 700;
+	font-size: 60pt;
+}
+.subtitle{
+	margin:auto auto;
+	text-align:center;
+	color:#fff;
+	font-family: "Ebrima",serif;
+	font-weight: 700;
+	font-size: 48pt;
+}
+/*misc*/

@@ -1,0 +1,43 @@
+/*
+* Sander De Bleecker - 2 NMCT1
+* 08/08/2015
+* Web advanced : DPD - Parcel Delivery
+*/
+
+/*Relative Grid*/
+.rg12{
+	width: 1920px;
+}
+.rg9{
+	width:1440px;
+}
+.rg8{
+	width:1280px;
+}
+.rg7{
+	width:1140px;
+}
+.rg6{
+	width: 960px;
+}
+.rg3{
+	width: 480px;
+}
+.rg2{
+	width: 320px;
+}
+/*height*/
+.rgh12{
+	height:915px; 
+}
+.rgh4{
+	height:305px; 
+}
+/*marges*/
+/*padding*/
+.rg1_top_padding{
+	padding-top:160px;
+}
+.rg2_top_padding{
+	padding-top:320px;
+}
