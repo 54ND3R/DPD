@@ -3,56 +3,144 @@
 * 08/08/2015
 * Web advanced : DPD - Parcel Delivery
 */
+@media (max-width: 600px) and (min-width: 480px) {
+	body{
+		background-color:green;
+	}
+	.rg48{
+		width:1920px ;
+	}
+	.rg12{
+		width: 480px;
+	}
+	.rg9{
+		width: 360px;
+	}
+	.rg8{
+		width: 320px;
+	}
+	.rg7{
+		width: 280px;
+	}
+	.rg6{
+		width: 240px;
+	}
+	.rg3{
+		width: 120px;
+	}
+	.rg2{
+		width: 80px;
+	}
+	/*height*/
+	.rgh12{
+		height:640px; 
+	}
+	.rgh6{
+		height:320px;
+	}
+	.rgh4{
+		height:240px; 
+	}
+	.rgh1{
+		height:60px;
+	}
+	/*x margin*/
+	.rg8_left_margin{
+		margin-left: 320px;
+	}
+	/*x padding*/
+	.rgx0_25_padding{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	/*padding*/
+	.rg0_5_top_padding{
+		padding-top:30px;
+	}
+	.rg1_top_padding{
+		padding-top:60px;
+	}
+	.rg1_25_top_padding{
+		padding-top:75px;
+	}
+	.rg1_5_top_padding{
+		padding-top:90px;
+	}
+	.rg2_top_padding{
+		padding-top:120px;
+	}
+	/*margin*/
+	.rg0_5_top_margin{
+		margin-top:30px;
+	}
+}
+/*HD*/
+@media (min-width:1920px ) {
 
-/*Relative Grid*/
-.rg12{
-	width: 1920px;
-}
-.rg9{
-	width:1440px;
-}
-.rg8{
-	width:1280px;
-}
-.rg7{
-	width:1140px;
-}
-.rg6{
-	width: 960px;
-}
-.rg3{
-	width: 480px;
-}
-.rg2{
-	width: 320px;
-}
-/*height*/
-.rgh12{
-	height:915px; 
-}
-.rgh6{
-	height:457.5px;
-}
-.rgh4{
-	height:305px; 
-}
-.rgh1{
-	height:76.5px;
-}
-/*x margin*/
-.rg8_left_margin{
-	margin-left:1280px;
-}
-/*padding*/
-.rg0_5_top_padding{
-	padding-top:80px;
-}
-.rg1_top_padding{
-	padding-top:160px;
-}
-.rg1_25_top_padding{
-	padding-top:200px;
-}
-.rg2_top_padding{
-	padding-top:320px;
+	.rg48{
+		width:7680px ;
+	}
+	.rg12{
+		width: 1920px;
+	}
+	.rg9{
+		width:1440px;
+	}
+	.rg8{
+		width:1280px;
+	}
+	.rg7{
+		width:1140px;
+	}
+	.rg6{
+		width: 960px;
+	}
+	.rg3{
+		width: 480px;
+	}
+	.rg2{
+		width: 320px;
+	}
+	/*height*/
+	.rgh12{
+		height:915px; 
+	}
+	.rgh6{
+		height:457.5px;
+	}
+	.rgh4{
+		height:305px; 
+	}
+	.rgh1{
+		height:76.5px;
+	}
+	/*x margin*/
+	.rg8_left_margin{
+		margin-left:1280px;
+	}
+	/*x padding*/
+	.rgx0_25_padding{
+		padding-left:40px;
+		padding-right:40px;
+	}
+	/*padding*/
+	.rg0_5_top_padding{
+		padding-top:80px;
+	}
+	.rg1_top_padding{
+		padding-top:160px;
+	}
+	.rg1_25_top_padding{
+		padding-top:200px;
+	}
+	.rg1_5_top_padding{
+		padding-top:240px;
+	}
+	.rg2_top_padding{
+		padding-top:320px;
+	}
+	/*margin*/
+	.rg0_5_top_margin{
+		margin-top:80px;
+	}
 }

@@ -12,35 +12,38 @@ body div{
 }
 header{
 	height: 60px;
+	margin:0 0;
 }
-	header > img{
-		float:right;
-	}
 	header > nav{
-		float:left;
 	}
-	header > nav > ul > li{
-		list-style: none;
-		display: block;
-		padding:0 50px;
-		float:left;
-	}
+		header > nav > ul{
+		}
+			header > nav > ul > li{
+				text-align:center;
+				list-style: none;
+				display: block;
+				padding:0 50px;
+				color:#999;
+				width:15%;
+				font-family:"Ebrima";
+				float:left;
+			}
+				header > nav > ul > li > a:hover {
+					font-weight:700;
+				}
 
 /*frequent classes*/
 div#slide_wrapper{
-	width:10000px;
 }
 div.slide{
 	float:left;
 }
 /*slide1*/
-div#slide1{
-	background:url("../img/home/slide1_globe.png") no-repeat;
-	background-color:#ed1c24;
-}
+
+
 
 /*slide2*/
-div#slide2{
+div#service{
 	background-color:#4a5054;
 }
 div#slide2_wrap{
@@ -51,66 +54,134 @@ div#slide2_weight,div#slide2_size,div#slide2_fragility{
 	line-height:100px;
 	float:left;
 }
-div#slide2_weight{
-	background: url("../img/service/service_weight.png") no-repeat;
-}
-div#slide2_size{
-	background: url("../img/service/service_size.png") no-repeat;
-}
-div#slide2_fragility{
-	background: url("../img/service/service_fragility.png") no-repeat;
-}
+
 /*slide3*/
-div#slide3{
+div#tracking{
 
 }
-div#slide3_tracking{
-	margin:auto auto;
-	background: url("../img/tracking/tracking_tracker.png") no-repeat;
-	background-position: 0 50px;
-}
-div#slide3 > input[type="button"] {
-	background-color:#fff;
+
+div#tracking > input[type="button"] {
+	background-color:transparent;
 	border:3px #000 solid;
 }
-div#slide4{
+div#delivery{
 	background-color:#4a5054;
 }
 div#slide4_delivery{
-	margin:auto auto;
-	background: url("../img/delivery/delivery_login.png") no-repeat;;
+	margin-left: auto;
+	margin-right: auto;
 }
-div#slide4 > input[type="button"] {
+div#delivery > input[type="button"] {
 	background-color:transparent;
 	border:3px #fff solid;
 }
-/*fonts*/
 
-.title{
-	margin:auto auto;
-	text-align:center;
-	color:#fff;
-	font-family: "Ebrima",serif;
-	font-weight: 700;
-	font-size: 60pt;
+/*images*/
+div#slide4_delivery{
+	background: url("../img/delivery/delivery_login.png") no-repeat;;
 }
-.subtitle{
-	margin:auto auto;
-	text-align:center;
-	color:#fff;
-	font-family: "Ebrima",serif;
-	font-weight: 700;
-	font-size: 48pt;
+/*fonts*/
+@media (min-width:1920px ) {
+
+	.title{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 700;
+		font-size: 60pt;
+	}
+	.subtitle{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 700;
+		font-size: 48pt;
+	}
+	.smalltitle{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 400;
+		font-size: 24pt;
+	}
+	/*images*/
+	div#home{
+		background:url("../img/home/slide1_globe.png") no-repeat;
+		background-color:#ed1c24;
+	}
+	div#slide2_weight{
+	background: url("../img/service/service_weight.png") no-repeat;
+	}
+	div#slide2_size{
+		background: url("../img/service/service_size.png") no-repeat;
+	}
+	div#slide2_fragility{
+		background: url("../img/service/service_fragility.png") no-repeat;
+	}
+	div#slide3_tracking{
+		margin:auto auto;
+		background: url("../img/tracking/tracking_tracker.png") no-repeat;
+		background-position: 0 50px;
+	}
 }
-.smalltitle{
-	margin:auto auto;
-	text-align:center;
-	color:#fff;
-	font-family: "Ebrima",serif;
-	font-weight: 400;
-	font-size: 24pt;
-}
-.black{
-	color:#000;
+@media (max-width: 600px) and (min-width: 480px) {
+	.title{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 700;
+		font-size: 16pt;
+	}
+	.subtitle{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 700;
+		font-size: 12pt;
+	}
+	.smalltitle{
+		margin:auto auto;
+		text-align:center;
+		color:#fff;
+		font-family: "Ebrima",serif;
+		font-weight: 400;
+		font-size: 8pt;
+	}
+	div#service_slogan{
+		margin-top:120px;
+	}	
+	/*images*/
+	div#home{
+		background:url("../img/home/slide1_globe_480.png") no-repeat;
+		background-color:#ed1c24;
+	}
+	div#slide2_weight,div#slide2_size,div#slide2_fragility{
+		line-height: 240px;
+	}
+	div#slide2_weight{
+		margin-top:80px;
+		background: url("../img/service/service_weight_480.png") no-repeat;
+	}
+	div#slide2_size{
+		margin-top:80px;
+		background: url("../img/service/service_size_480.png") no-repeat;
+	}
+	div#slide2_fragility{
+		margin-top:80px;
+		background: url("../img/service/service_fragility_480.png") no-repeat;
+	}
+	div#slide3_tracking{
+		margin:auto auto;
+		background: url("../img/tracking/tracking_tracker_480.png") no-repeat;
+		background-position: 0 50px;
+	}
 }
 /*misc*/
+	.black{
+		color:#000;
+	}
