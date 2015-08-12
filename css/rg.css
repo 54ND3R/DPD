@@ -3,10 +3,76 @@
 * 08/08/2015
 * Web advanced : DPD - Parcel Delivery
 */
-@media (max-width: 600px) and (min-width: 480px) {
-	body{
-		background-color:green;
+/*PC 1024*/
+@media (min-width:600px) and (max-width: 1920px)  {
+	.rg48{
+		width:4096px ;
 	}
+	.rg12{
+		width: 1024px;
+	}
+	.rg9{
+		width:768px;
+	}
+	.rg8{
+		width:682px;
+	}
+	.rg7{
+		width:598px;
+	}
+	.rg6{
+		width: 512px;
+	}
+	.rg3{
+		width: 256px;
+	}
+	.rg2{
+		width: 170px;
+	}
+	/*height*/
+	.rgh12{
+		height:768px; 
+	}
+	.rgh6{
+		height:384px;
+	}
+	.rgh4{
+		height:256px; 
+	}
+	.rgh1{
+		height:64px;
+	}
+	/*x margin*/
+	.rg8_left_margin{
+		margin-left:682px;
+	}
+	/*x padding*/
+	.rgx0_25_padding{
+		padding-left:21px;
+		padding-right:21px;
+	}
+	/*padding*/
+	.rg0_5_top_padding{
+		padding-top:32px;
+	}
+	.rg1_top_padding{
+		padding-top:64px;
+	}
+	.rg1_25_top_padding{
+		padding-top:80px;
+	}
+	.rg1_5_top_padding{
+		padding-top:96px;
+	}
+	.rg2_top_padding{
+		padding-top:128px;
+	}
+	/*margin*/
+	.rg0_5_top_margin{
+		margin-top:32px;
+	}
+}
+@media (max-width: 600px)  {
 	.rg48{
 		width:1920px ;
 	}
@@ -74,6 +140,7 @@
 		margin-top:30px;
 	}
 }
+
 /*HD*/
 @media (min-width:1920px ) {
 

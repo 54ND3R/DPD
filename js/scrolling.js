@@ -15,13 +15,12 @@ function init(){
 		});
 	}
 	//nav 
-	var nav = document.getElementById("nav");
+	var header = document.getElementById("header");
 	document.addEventListener("scroll",function(){
+		console.log("function gets executed");
 		var sl = document.body.scrollLeft;
 		var wrapper = document.getElementById("slide_wrapper");
-		if(sl<wrapper.offsetWidth-screen.width){
-			nav.style.marginLeft=sl+"px";
-		}
+		header.style.marginLeft=sl+"px";
 	});
 }
 
@@ -33,6 +32,9 @@ function scrollTo(el){
 	}
 	var currentX = window.pageXOffset;
 	var targetX = document.getElementById(el).offsetLeft;
+	console.log("max X"+document.getElementById("slide_wrapper").offsetWidth);
+
+
 	if(currentX<targetX){
 		if(currentX+distance>targetX){
 			animator=null;
@@ -53,10 +55,15 @@ function scrollToRight(el){
 	var currentX = window.pageXOffset;
 	var targetX = document.getElementById(el).offsetLeft;
 	animator = setTimeout('scrollToRight(\''+el+'\')',speed)
-	
-	if(currentX < targetX+distance/2){
+
+	if(currentX < targetX){
 		var scrollX = currentX+distance;
 		window.scroll(scrollX,0);
+		if(currentX==window.pageXOffset){
+			//!window.scroll
+			clearTimeout(animator);
+			animator=null; 
+		}
 	}else{
 		clearTimeout(animator);
 		animator=null;
@@ -65,9 +72,6 @@ function scrollToRight(el){
 function scrollToLeft(el){
 	var currentX = window.pageXOffset;
 	var targetX = document.getElementById(el).offsetLeft;
-	console.log("cur"+currentX)
-
-	console.log("tar"+targetX);
 
 	animator = setTimeout('scrollToLeft(\''+el+'\')',speed)
 
