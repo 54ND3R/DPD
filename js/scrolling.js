@@ -2,25 +2,26 @@ var scrollX=0;
 var distance=20;
 var speed=5;
 var animator;
-window.onload = init;
 
-function init(){
+function initScrolling(){
+	console.log("initScrolling");
 	//nav links
 	var listitems = document.getElementsByClassName("scroll");
 	for(var i=0;i<listitems.length;i++){
 		listitems[i].addEventListener("click", function(event){
 				var listitem = event.target;
-				var id = listitem.innerText;
+				var id = listitem.textContent || listitem.innerText;
 				scrollTo(id.toLowerCase());
 		});
 	}
 	//nav 
 	var header = document.getElementById("header");
 	document.addEventListener("scroll",function(){
-		console.log("function gets executed");
-		var sl = document.body.scrollLeft;
+		var sl = document.body.scrollLeft || window.pageXOffset;
 		var wrapper = document.getElementById("slide_wrapper");
-		header.style.marginLeft=sl+"px";
+		if(sl<wrapper.offsetWidth*0.75) { 
+			header.style.marginLeft=sl+"px";
+		}
 	});
 }
 
